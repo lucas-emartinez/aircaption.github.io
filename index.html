@@ -41,7 +41,7 @@
       <section id="inicio" class="d-flex align-items-center ">
         <div class="container d-flex flex-column justify-content-end" data-aos="zoom-out" data-aos-delay="100">
           <h1>Bienvenido</h1>
-          <h2>La empresa por excelencia de servicios aéreos</h2>
+          <h2 class="d-flex flexrow"><span id="inicioTyped"></span></h2>
         </div>
       </section><!-- FIN INICIO -->
       <main id="main">
@@ -295,6 +295,9 @@
               <div class="input-group mb-3">
                 <input type="file" class="form-control" id="inputGroupFile02">
               </div>
+              <div>
+                <button id="cv_chargue" type="submit" class="btn btn-primary">Cargar</button>
+              </div>
             </div>
           </div>
         </div>
@@ -360,6 +363,15 @@
     <script src="lib/glightbox/dist/js/glightbox.min.js"></script>
     <script src="lib/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
     <script src="lib/js/main.js"></script>
+    <script>
+      var typed3 = new Typed('#inicioTyped', {
+        strings: ['La empresa por excelencia en servicios aéreos', 'Somos Aircaption......'],
+        typeSpeed: 50,
+        smartBackspace: true,
+        loop: true,
+      });
+  </script>
   </body>
 </html>
