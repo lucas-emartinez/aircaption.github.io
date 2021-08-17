@@ -1,34 +1,13 @@
 <?php
-if(isset($_POST['email'])) {
-
-// Debes editar las próximas dos líneas de código de acuerdo con tus preferencias</bold>
-$email_to = "luketaapeeola@gmail.com";
-$email_subject = "Contacto desde el sitio web";
-
-// Aquí se deberían validar los datos ingresados por el usuario</bold>
-if(!isset($_POST['name']) ||
-!isset($_POST['email']) ||
-!isset($_POST['subject']) ||
-!isset($_POST['message'])) {
-
-echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
-echo "Por favor, vuelva atrás y verifique la información ingresada<br />";
-die();
-}
-
-$email_message = "Detalles del formulario de contacto:\n\n";
-$email_message .= "Nombre: " . $_POST['name'] . "\n";
-$email_message .= "E-mail: " . $_POST['email'] . "\n";
-$email_message .= "Titulo: " . $_POST['subject'] . "\n";
-$email_message .= "Mensaje: " . $_POST['message'] . "\n\n";
-
-
-// Ahora se envía el e-mail usando la función mail() de PHP</bold>
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
-
-echo "¡El formulario se ha enviado con éxito!";
-}
+$destinatario = 'luketaapeeola@gmail.com';
+// Correo al que se enviará el mensaje
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$email = $_POST['message'];
+$header = "Enviado desde Aircaption";
+$mensajeCompleto = $message ."\n De :" . $name;
+mail($destinatario, $subject, $mensajeCompleto, $header);
+echo "<script>alert('Correo enviado exitosamente!')</script>";
+echo "<script> setTimeout(\"location.href='index.html'\",1000)</script>";
 ?>
