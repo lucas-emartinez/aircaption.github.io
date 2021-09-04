@@ -924,22 +924,20 @@ section {
     font-size: 1em; }
   .carousel-inner img {
     width: 100%;
-    height: 200px; }
+    height: 150px; }
   .btn-carousel {
-    font-size: 0.5em;
-    width: 40%;
-    margin-top: 110px; } }
+    display: none } }
 
 @media screen and (max-width: 566px) and (min-width: 304px) {
   .carousel-caption h5 {
     font-size: 1em; }
   .carousel-inner img {
     width: 100%;
-    height: 250px; }
+    height: 200px; }
   .btn-carousel {
-    font-size: 0.5em;
-    width: 30%;
-    margin-top: 160px; } }
+    display: none
+   }
+}
 
 @media screen and (max-width: 767px) and (min-width: 567px) {
   .carousel-caption h5 {

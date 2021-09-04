@@ -3,21 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Aircaption</title>
+        <title>Aircaption | Contacto</title>
         <meta content="Ofrecemos servicios aéreos con drones en toda Argentina. Mapes, relevamientos, agricultura y mucho más!" name="description">
         <meta content="Drone, Servicios aéreos, Fotografía, Mapas, Curvas de nivel, Empresa" name="keywords">
         <!-- ICONOS -->
         <link href="../img/logo_icon.png" rel="icon">
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-        <!-- Vendor CSS Files -->
+        <!-- CSS Archivos -->
         <link href="../lib/aos-master/aos.css" rel="stylesheet">
         <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
         <link href="../lib/boxicons/css/boxicons.min.css" rel="stylesheet">
-        <link href="../lib/glightbox/css/glightbox.min.css" rel="stylesheet">
         <link href="../lib/swiper/swiper-bundle.min.css" rel="stylesheet">
-        <!-- CSS -->
+        <!-- CSS Archivos -->
         <link href="../css/style.css" type="text/css" rel="stylesheet">
       </head>
     <body>
@@ -26,11 +25,11 @@
               <h1 class="logo"><a href="../index.html">Aircaption</a></h1>
               <nav id="navbar" class="navbar">
                 <ul>
-                  <li><a class="nav-link scrollto active" href="../index.html#inicio">Inicio</a></li>
-                  <li><a class="nav-link scrollto" href="servicios.html#services">Servicios</a></li>
-                  <li><a class="nav-link scrollto" href="flota.html#flota">Flota</a></li>
-                  <li><a class="nav-link scrollto " href="galeria.html#galeria">Galeria</a></li>
-                  <li><a class="nav-link scrollto" href="contacto.html#contacto">Contacto</a></li>
+                  <li><a class="nav-link" href="../index.html#inicio">Inicio</a></li>
+                  <li><a class="nav-link" href="servicios.html#services">Servicios</a></li>
+                  <li><a class="nav-link" href="flota.html#flota">Flota</a></li>
+                  <li><a class="nav-link" href="galeria.html#galeria">Galeria</a></li>
+                  <li><a class="nav-link active" href="contacto.html#contacto">Contacto</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
               </nav><!-- .navbar -->
@@ -38,69 +37,71 @@
           </header><!-- End Header -->
       <!-- ======= CONTACTO Inicio ======= -->
       <section id="contacto" class="contact">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title">
+        <article>
+          <div class="container" data-aos="fade-up">
+              <div class="section-title">
                 <h2>Contacto</h2>
-            </div>
-            <div class="row mt-1">
-                <div class="col-lg-4">
-                    <div class="info">
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Ubicación:</h4>
-                            <p>Av. Pte. Perón 2435, Morón, GBA</p>
-                        </div>
-                        <div class="email">
-                            <i class="bi bi-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>aircaption@gmail.com</p>
-                        </div>
+              </div>
+              <div class="row mt-1">
+                  <div class="col-lg-4">
+                      <div class="info">
+                          <div class="address">
+                              <i class="bi bi-geo-alt"></i>
+                              <h4>Ubicación:</h4>
+                              <p>Av. Pte. Perón 2435, Morón, GBA</p>
+                          </div>
+                          <div class="email">
+                              <i class="bi bi-envelope"></i>
+                              <h4>Email:</h4>
+                              <p>aircaption@gmail.com</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-8 mt-5 mt-lg-0">
+                      <form action="forms/mail.php" method="POST" role="form" enctype="multipart/form-data" class="php-email-form">
+                          <div class="row">
+                              <div class="col-md-6 form-group">
+                                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
+                              </div>
+                              <div class="col-md-6 form-group mt-3 mt-md-0">
+                                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Mail" required>
+                              </div>
+                          </div>
+                          <div class="form-group mt-3">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Título"
+                                    required>
+                          </div>
+                          <div class="form-group mt-3">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"
+                                        required></textarea>
+                          </div>
+                          <div class="my-3">
+                              <div class="loading">Cargando</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
+                          </div>
+                          <div class="text-center">
+                              <button type="submit">Enviar mensaje</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </article>
+            <article
+              <div class="container">
+                <div class="row justify-content-center">
+                    <h4>Trabaja con nosotros</h4>
+                    <p>Adjuntanos tu CV aquí.</p>
+                    <div class="input-group mb-3">
+                      <input type="file" class="form-control" id="inputGroupFile02">
                     </div>
+                    <div>
+                      <button id="cv_chargue" type="submit" class="btn btn-primary">Cargar</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-8 mt-5 mt-lg-0">
-                    <form action="forms/mail.php" method="POST" role="form" enctype="multipart/form-data" class="php-email-form">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
-                            </div>
-                            <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Tu Mail" required>
-                            </div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Título"
-                                  required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"
-                                      required></textarea>
-                        </div>
-                        <div class="my-3">
-                            <div class="loading">Cargando</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit">Enviar mensaje</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <h4>Trabaja con nosotros!</h4>
-              <p>Adjuntanos tu CV aquí.</p>
-              <div class="input-group mb-3">
-                <input type="file" class="form-control" id="inputGroupFile02">
               </div>
-              <div>
-                <button id="cv_chargue" type="submit" class="btn btn-primary">Cargar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
+          </article>
     </section>
     <!-- ======= Footer ======= -->
     <footer id="footer">
