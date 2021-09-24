@@ -16,6 +16,7 @@
         <link href="../lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
         <link href="../lib/boxicons/css/boxicons.min.css" rel="stylesheet">
         <link href="../lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <link href="../lib/SweetAlert/dist/sweetalert2.min.css" rel="stylesheet">
         <!-- CSS Archivos -->
         <link href="../css/style.css" type="text/css" rel="stylesheet">
       </head>
@@ -58,7 +59,7 @@
                       </div>
                   </div>
                   <div class="col-lg-8 mt-5 mt-lg-0">
-                      <form action="forms/mail.php" method="POST" role="form" enctype="multipart/form-data" class="php-email-form">
+                      <form action="../forms/mail.php" method="POST" class="php-email-form">
                           <div class="row">
                               <div class="col-md-6 form-group">
                                   <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
@@ -75,33 +76,16 @@
                               <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"
                                         required></textarea>
                           </div>
-                          <div class="my-3">
-                              <div class="loading">Cargando</div>
-                              <div class="error-message"></div>
-                              <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
-                          </div>
-                          <div class="text-center">
-                              <button type="submit">Enviar mensaje</button>
+                          <div class="col-md-12 text-center">
+                            <div class="loading">Cargando</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Mensaje enviado, Muchas gracias</div>
+                            <button type="submit">Enviar</button>
                           </div>
                       </form>
                   </div>
               </div>
             </article>
-            <article
-              <div class="container">
-                <div class="row justify-content-center">
-                    <h4>Trabaja con nosotros</h4>
-                    <p>Adjuntanos tu CV aquí.</p>
-                    <div class="input-group mb-3">
-                      <input type="file" class="form-control" id="inputGroupFile02">
-                    </div>
-                    <div>
-                      <button id="cv_chargue" type="submit" class="btn btn-primary">Cargar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </article>
     </section>
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -166,5 +150,7 @@
       <script src="../lib/isotope-layout/isotope.pkgd.min.js"></script>
       <script src="../lib/swiper/swiper-bundle.min.js"></script>
       <script src="../lib/js/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="../lib/SweetAlert/dist/sweetalert2.min.js"></script>
 </body>
 </html>
